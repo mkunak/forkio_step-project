@@ -1,0 +1,42 @@
+.prices {
+  background: url("../../../src/img/prices/prices-background.png") no-repeat center/cover;
+
+  &__item {
+    border: 1px solid red;
+    color: #ffffff;
+  }
+
+  &__heading {
+    font: normal 24px ﻿Montserrat;
+    text-transform: uppercase;
+    padding: 46px 64px 34px;
+
+    &--transparent {
+
+    }
+  }
+
+  &__content {
+
+
+    &--transparent {
+
+    }
+  }
+
+  &__price {
+
+  }
+
+  &__term {
+
+  }
+
+  &__separator {
+
+  }
+
+  &__features {
+
+  }
+}
