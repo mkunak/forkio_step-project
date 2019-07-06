@@ -4,6 +4,11 @@
   &__item {
     border: 1px solid red;
     color: #ffffff;
+    display: inline-block;
+
+    &--transparent {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 
   &__heading {
@@ -12,16 +17,14 @@
     padding: 46px 64px 34px;
 
     &--transparent {
-
+      background-color: rgba(255, 255, 255, 0.2);
     }
   }
 
   &__content {
 
 
-    &--transparent {
 
-    }
   }
 
   &__price {
@@ -33,7 +36,7 @@
   }
 
   &__separator {
-
+    border: 2px solid $bg-font-border-color;
   }
 
   &__features {
