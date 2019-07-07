@@ -1,0 +1,42 @@
+.header {
+  background: url("../../../src/img/header/header-bg.png") no-repeat center/cover;
+  font-family: Montserrat, Arial, sans-serif;
+  position: relative;
+  padding-top: 43px;
+  height: 614px;
+
+  &--flex {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__slogan {
+    font-size: 18px;
+    color: $bg-font-border--color;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2.8;
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $description--color;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.btn-description-wrap {
+  width: 300px;
+  text-align: center;
+  margin: 400px 0 0;
+}

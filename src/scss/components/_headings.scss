@@ -1,0 +1,49 @@
+.section-heading{
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+
+  &--header-size {
+    font-size: 48px;
+    //width: 295px;
+    text-align: center;
+  }
+
+  &--rev-editor-size {
+    font-size: 26px;
+    width: 295px;
+    text-align: center;
+  }
+
+  &--advantages-size {
+    font-size: 32px;
+    width: 295px;
+    text-align: center;
+  }
+
+  &--prices-size {
+    font-size: 28px;
+    width: 295px;
+    text-align: center;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  &--light {
+    color: #ffffff;
+  }
+
+  &--dark {
+    color: $bg-font-border--color;
+  }
+
+  &--extradark {
+    color: #635C73;
+  }
+}

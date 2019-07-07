@@ -14,10 +14,10 @@ const nunjucks = require('gulp-nunjucks-render');           //template engine
 const imagemin = require('gulp-imagemin');
 
 const fontsFiles = [										//составляем массив переменних с все файлов шрифтов, для переноса в папку разработки
-    './src/fonts/**.eot',
-    './src/fonts/**.ttf',
-    './src/fonts/**.woff',
-    './src/fonts/**.otf'
+    './src/fonts/**/**.eot',
+    './src/fonts/**/**.ttf',
+    './src/fonts/**/**.woff',
+    './src/fonts/**/**.otf'
 ];
 
 const imgFiles = [
