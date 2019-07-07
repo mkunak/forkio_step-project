@@ -49,14 +49,14 @@
         font-weight: 400;
 
         &--active {
-            color: $bg-font-border-color;
+            color: $bg-font-border--color;
 
             &::before {
                 content: "";
                 position: absolute;
                 left: 0;
                 top: 17px;
-                background-color: $bg-font-border-color;
+                background-color: $bg-font-border--color;
                 width: 8px;
                 height: 53px;
             }
