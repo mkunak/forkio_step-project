@@ -63,7 +63,7 @@
             vulputate
             dignissim. Sed id metus id quam auctor molestie eget ut augue.
         </p>
-        <ul class="rev-editor__items--flex">
+        <ul class="rev-editor__items rev-editor__items--flex">
             <li class="rev-editor__item">
                 <form class="btn-sm">
                     <button type="submit" class="btn-sm__button">
@@ -108,35 +108,39 @@
 
 <section class="advantages">
     <div class="container">
-        <h2 class="section-heading section-heading--advantages-size section-heading--dark ">&lt;Here is what you
+        <h2 class="section-heading section-heading--advantages-size section-heading--dark">&lt;Here is what you
             get&gt;</h2>
-        <ul>
-            <li>
-                <img src="src/img/advantages/advantage_1.png" alt="advantage_1">
-                <h3>Created to Make The Web Better</h3>
-                <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id
+        <ul class="advantages__items advantages__items--flex">
+            <li class="advantages__item">
+                <img class="advantages__icon" src="src/img/advantages/advantage_1.png" alt="advantage_1">
+                <h3 class="advantages__heading">Created to Make The Web Better</h3>
+                <p class="advantages__description">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+                    laoreet vulputate dignissim. Sed id
                     metus
                     id quam auctor molestie eget ut augue.</p>
             </li>
 
-            <li>
-                <img src="src/img/advantages/advantage_2.png" alt="advantage_2">
-                <h3>Incredibly Powerful Tool</h3>
-                <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac.
+            <li class="advantages__item">
+                <img class="advantages__icon" src="src/img/advantages/advantage_2.png" alt="advantage_2">
+                <h3 class="advantages__heading">Incredibly Powerful Tool</h3>
+                <p class="advantages__description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+                    odio, ut volutpat massa placerat ac.
                     Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
             </li>
 
-            <li>
-                <img src="src/img/advantages/advantage_3.png" alt="advantage_3">
-                <h3>Experimental Stuff</h3>
-                <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac.
+            <li class="advantages__item">
+                <img class="advantages__icon" src="src/img/advantages/advantage_3.png" alt="advantage_3">
+                <h3 class="advantages__heading">Experimental Stuff</h3>
+                <p class="advantages__description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+                    odio, ut volutpat massa placerat ac.
                     Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
             </li>
 
-            <li>
-                <img src="src/img/advantages/advantage_4.png" alt="advantage_4">
-                <h3>Created to Make The Web Better</h3>
-                <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac.
+            <li class="advantages__item">
+                <img class="advantages__icon" src="src/img/advantages/advantage_4.png" alt="advantage_4">
+                <h3 class="advantages__heading">Created to Make The Web Better</h3>
+                <p class="advantages__description">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis
+                    odio, ut volutpat massa placerat ac.
                     Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
             </li>
         </ul>
@@ -186,16 +190,60 @@
     <div class="container">
         <h2 class="section-heading section-heading--prices-size section-heading--capitalize section-heading--light">Fork
             Subscription Pricing</h2>
-        <ul class="prices--flex">
+        <ul class="prices__items prices__items--flex">
             <li class="prices__item prices__item--transparent">
-                <p class="prices__heading prices__heading--transparent">students</p>
-                <div class="prices__content">
+                <h3 class="prices__heading prices__heading--transparent">students</h3>
+                <div class="prices__content prices__content--flex">
                     <p class="prices__price">&#36;<span class="prices__price--bold">29</span></p>
                     <p class="prices__term">per month</p>
                     <div class="prices__separator"></div>
                     <p class="prices__features">personal license</p>
+                    <div class="btn--flex">
+                        <a href="#" class="btn btn--purchase-size btn--transparent">purchase</a>
+                    </div>
                 </div>
-                <a href="#" class="btn btn--purchase-size btn--transparent"></a>
+            </li>
+
+            <li class="prices__item prices__item--transparent">
+                <h3 class="prices__heading prices__heading--transparent">professional</h3>
+                <div class="prices__content prices__content--flex">
+                    <p class="prices__price">&#36;<span class="prices__price--bold">59</span></p>
+                    <p class="prices__term">per month</p>
+                    <div class="prices__separator"></div>
+                    <p class="prices__features">Professional License</p>
+                    <p class="prices__features">E-mail Support</p>
+                    <div class="btn--flex">
+                        <a href="#" class="btn btn--purchase-size btn--transparent">purchase</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="prices__item prices__item--xl prices__item--transparent-dark">
+                <h3 class="prices__heading prices__heading--transparent-dark prices__heading--xl">agency</h3>
+                <div class="prices__content prices__content--flex prices__content--xl">
+                    <p class="prices__price prices__price--xl">&#36;<span class="prices__price--bold">99</span></p>
+                    <p class="prices__term">per month</p>
+                    <div class="prices__separator prices__separator--xl"></div>
+                    <p class="prices__features">1-12 Team Members</p>
+                    <p class="prices__features">Phone Support</p>
+                    <div class="btn--flex">
+                        <a href="#" class="btn btn--purchase-size btn--transparent">purchase</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="prices__item prices__item--transparent">
+                <h3 class="prices__heading prices__heading--transparent">enterprise</h3>
+                <div class="prices__content prices__content--flex">
+                    <p class="prices__price">&#36;<span class="prices__price--bold">159</span></p>
+                    <p class="prices__term">per month</p>
+                    <div class="prices__separator"></div>
+                    <p class="prices__features">Unlimited Team Members</p>
+                    <p class="prices__features">24/ 7 Phone Support</p>
+                    <div class="btn--flex">
+                        <a href="#" class="btn btn--purchase-size btn--transparent">purchase</a>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
