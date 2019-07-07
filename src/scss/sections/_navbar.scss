@@ -1,0 +1,84 @@
+@import "../variables";
+
+.nav-bar {
+    background-color: #27262a;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+
+    &__img--hover {
+        position: absolute;
+        opacity: 0;
+    }
+
+    &__text {display: none}
+}
+
+.main-menu {
+    position: absolute;
+    top: 103px;
+    right: 15px;
+    display: none;
+    width: 290px;
+    background-color: #333;
+
+
+    &__item {
+        padding-top: 31px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #707070;
+    }
+
+    &__link {
+        font-size: 26px;
+        color: #fff;
+        padding-left: 32px;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+
+        &--active {
+            color: $bg-font-border--color;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 17px;
+                background-color: $bg-font-border--color;
+                width: 8px;
+                height: 53px;
+            }
+        }
+    }
+}
+
+.menu-burger {
+    align-self: center;
+
+    &__line {
+        height: 3px;
+        margin-bottom: 4px;
+        background-color: #fff;
+
+        &--short {
+            width: 20px;
+            margin-left: 6px;
+        }
+
+        &--long {
+            width: 26px;
+        }
+    }
+}
