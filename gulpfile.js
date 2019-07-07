@@ -13,19 +13,20 @@ const babel = require('gulp-babel');						//cross-browser compatibility js
 const nunjucks = require('gulp-nunjucks-render');           //template engine
 const imagemin = require('gulp-imagemin');
 
-const fontsFiles = [										//составляем массив переменных с всех файлов шрифтов, для переноса в папку разработки
-    './src/fonts/**/*.eot',
-    './src/fonts/**/*.ttf',
-    './src/fonts/**/*.woff',
-    './src/fonts/**/*.otf'
+const fontsFiles = [										//составляем массив переменних с все файлов шрифтов, для переноса в папку разработки
+    './src/fonts/**/**.eot',
+    './src/fonts/**/**.ttf',
+    './src/fonts/**/**.woff',
+    './src/fonts/**/**.otf'
 ];
 
-const imgFiles = [                                          //составляем массив переменных с всех файлов картинок, для переноса в папку разработки
-    './src/img/**/*.jpg',
-    './src/img/**/*.png'
+const imgFiles = [
+    './src/img/**/**.jpg',
+    './src/img/**/**.jpeg',
+    './src/img/**/**.png'
 ];
 
-function cleandev() {										//модуль отчистки папки './dist' перед каждой расспаковкой
+function cleandev() {										//модуль отчистки папки перед каждой расспаковкой
     return gulp.src('./dist', {read: false})
         .pipe(clean())
 }
@@ -55,7 +56,7 @@ function scripts() {
             toplevel: true
         }))														//minify js
         .pipe(concat('all.js'))									//concat all js files
-        .pipe(rename(function (path) {							// function of rename extname for .js
+        .pipe(rename(function (path) {							// function of rename extname for .css
             path.extname = ".min.js";
         }))
         .pipe(gulp.dest('./dist/js'))
@@ -84,9 +85,9 @@ function watch() {
         }
     });
 
-    gulp.watch('./src/**/*.scss', forSass);				// ставим watcher для слежения за изменениями в файлах .scss
-    gulp.watch('./src/**/*.js', scripts);               // ставим watcher для слежения за изменениями в файлах .js
-    gulp.watch('*.html').on("change", reload);          // ставим watcher для слежения за изменениями в файлах .html
+    gulp.watch('./src/**/*.scss', forSass);				// ставим watcher для слежения за изменениями в файлах
+    gulp.watch('./src/**/*.js', scripts);
+    gulp.watch('*.html').on("change", reload);
 }
 
 gulp.task('cleandev', cleandev);
@@ -97,5 +98,5 @@ gulp.task('watch', watch);
 gulp.task('fonts', fonts);
 gulp.task('js', js);
 gulp.task('build', gulp.series('cleandev', gulp.series(img, fonts, js, scripts, forSass)));
-gulp.task('default', gulp.series('build', watch));
-// gulp.task('default', gulp.series('build', 'dev'));
+gulp.task('dev', gulp.series('build', watch));
+gulp.task('default', gulp.series('build', 'dev'));

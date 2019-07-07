@@ -2,8 +2,8 @@
 
 .nav-bar {
     background-color: #27262a;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .nav-bar .container {
@@ -27,8 +27,9 @@
 
 .main-menu {
     position: absolute;
-    top: 103px;
+    top: 104px;
     right: 15px;
+    z-index: 1;
     display: none;
     width: 290px;
     background-color: #333;
@@ -37,7 +38,7 @@
     &__item {
         padding-top: 31px;
         padding-bottom: 36px;
-        border-bottom: 1px solid #707070;
+        border-bottom: 1px solid $border-color;
     }
 
     &__link {

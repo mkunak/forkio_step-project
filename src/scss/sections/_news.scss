@@ -1,0 +1,43 @@
+@import "../variables";
+
+.news {
+    background-image: url("../img/news/news-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 61px;
+    padding-bottom: 73px;
+    text-align: center;
+
+    &__heading {
+        padding-bottom: 50px;
+    }
+
+    &__content {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+    &-item {
+        &__img {
+            padding-bottom: 41px;
+        }
+
+        &__text {
+            padding-bottom: 41px;
+            color: $color-white;
+            font-family: Lato, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 22px;
+        }
+    }
+
+    &__footer {
+        border-bottom: 2px solid $border-color;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        &-text { display: none; }
+    }
+}
+
