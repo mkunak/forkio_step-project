@@ -14,3 +14,43 @@
     color: $description--color;
   }
 }
+
+.btn-sm {
+  display: flex;
+
+  &__button {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #b6b6b6;
+    background-image: linear-gradient(#fbfbfb, #e4e4e4);
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+
+    &:hover {
+      border: 1px solid #9b9b9b;
+      background-image: linear-gradient(#fbfbfb, #cecece);
+    }
+  }
+
+  &__counter {
+    text-decoration: none;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: 1px solid #b6b6b6;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-left: none;
+    color: #000;
+
+    &:hover {
+      color: #0504ff;
+    }
+  }
+
+  &__octicon {
+    vertical-align: bottom;
+  }
+}
