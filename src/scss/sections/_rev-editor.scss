@@ -11,12 +11,17 @@
     margin: 23px auto 0;
   }
 
-  &__items--flex {
-    width: 240px;
+  &__items {
+    width: 260px;
+    height: 70px;
     margin: 34px auto 88px;
+    text-align: center;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    &--flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-between;
+    }
   }
 }

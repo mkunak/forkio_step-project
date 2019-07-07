@@ -1,44 +1,81 @@
 .prices {
-  background: url("../img/prices/prices-background.png") no-repeat center/cover;
+  //background: url("../img/prices/prices-background.png") no-repeat center/cover;
   font-family: Montserrat, Arial, sans-serif;
+  background-color: #4b3b4e;
 
-  &--flex {
+  &__items {
+    margin-top: 40px;
+    margin-bottom: 93px;
 
-    display: flex;
-    justify-content: center;
+    &--flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__item {
-    border: 1px solid red;
     color: #ffffff;
     display: inline-block;
+    margin-top: 13px;
+    align-self: center;
 
     &--transparent {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.11);
+
+      &-dark {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
   &__heading {
     font: normal 24px ﻿Montserrat;
     text-transform: uppercase;
-    padding: 46px 64px 34px;
+    padding: 46px 0 34px;
+    width: 256px;
+
+    text-align: center;
+
+    &--xl {
+      padding: 51px 0 43px;
+      width: 290px;
+    }
 
     &--transparent {
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.06);
+
+      &-dark {
+        background-color: rgba(0, 0, 0, 0.11);
+      }
     }
   }
 
   &__content {
-    border: 1px solid orange;
+    //border: 1px solid yellow;
+    padding-top: 32px;
+    padding-bottom: 38px;
+    height: 360px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &--xl {
+      padding-top: 15px;
+      padding-bottom: 47px;
+      height: 450px;
+    }
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__price {
     font-size: 60.18px;
-    margin-top: 32px;
+
+    &--xl {
+      font-size: 82px;
+    }
 
     &--bold {
       font-weight: bold;
@@ -47,7 +84,7 @@
 
   &__term {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
     margin-top: 24px;
   }
@@ -56,11 +93,24 @@
     border: 2px solid $bg-font-border--color;
     width: 60px;
     margin-top: 39px;
+    margin-bottom: 31px;
+
+    &--xl {
+      margin-top: 49px;
+      margin-bottom: 41px;
+    }
   }
 
   &__features {
     font-size: 16px;
     text-transform: capitalize;
-    margin-top: 31px;
+    line-height: 1.75;
   }
+}
+
+.btn--flex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }

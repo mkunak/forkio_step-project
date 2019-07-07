@@ -1,9 +1,39 @@
 .advantages {
   background: #f4f4f4;
+  padding-top: 34px;
+  padding-bottom: 6px;
+
+  &__items {
+    margin-top: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__heading {
+    margin: 30px 0 20px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 16px;
+    color: #323232;
+  }
+
+  &__description {
+    margin-bottom: 37px;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 14px;
+    color: $description--color;
+    line-height: 2;
+  }
 
   &__img {
     height: 381px;
     width: 716px;
     //transform: translateX(50%);
   }
+
 }
+
