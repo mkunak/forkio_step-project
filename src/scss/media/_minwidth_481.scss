@@ -111,20 +111,123 @@
 
   /*** End news ***/
 
+  // section header:
+
   .section-heading--header-size {
     font-size: 72px;
   }
 
   .header__slogan {
-    border: 1px solid yellow;
-
-    display: block;
-    font-size: 18px;
+    font-size: 24px;
     width: 100%;
-    line-height: 2.8;
     margin-top: 20px;
   }
 
+  .btn-description-wrap {
+    width: 100%;
+    bottom: -64px;
+  }
 
+  .btn--download-size {
+    font-size: 21px;
+    padding: 18px 63px;
+  }
 
+  .btn__description {
+    margin-top: 19px;
+  }
+
+  // section rev-editor:
+
+  .rev-editor {
+    margin-top: 158px;
+
+    &__description {
+      font-size: 21px;
+      line-height: 1.5;
+      width: 100%;
+      margin: 23px auto 0;
+    }
+
+    &__items {
+      width: 400px;
+      height: auto;
+      margin: 23px auto 98px;
+    }
+  }
+
+  .section-heading--rev-editor-size {
+    font-size: 42px;
+    width: 100%;
+  }
+
+  // section advantages:
+
+  .section-heading--advantages-size {
+    font-size: 42px;
+    width: 100%;
+  }
+
+  .advantages {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &__items {
+      margin-top: 55px;
+      margin-bottom: 0px;
+      text-align: left;
+
+      &--flex {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__item--flex {
+      display: flex;
+    }
+
+    &__icon--flex {
+      min-width: 150px;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+    &__context {
+      //margin-left: 24px;
+
+      &--flex{
+
+      }
+    }
+
+    &__heading {
+      margin: 0 0 20px;
+      font-size: 16px;
+      color: #323232;
+    }
+
+    &__description {
+      margin-bottom: 59px;
+      font-family: Montserrat, Arial, sans-serif;
+      font-size: 14px;
+      color: $description--color;
+      line-height: 1.5;
+    }
+
+    &__img {
+      height: 475px;
+      width: 933px;
+      //transform: translateX(50%);
+    }
+  }
+
+  // section prices:
+
+  .section-heading--prices-size {
+    font-size: 42px;
+    width: 100%;
+  }
 }
