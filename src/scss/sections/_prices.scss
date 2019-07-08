@@ -18,13 +18,15 @@
     color: #ffffff;
     display: inline-block;
     margin-top: 13px;
+    box-sizing: border-box;
+
     align-self: center;
 
     &--transparent {
       background-color: rgba(255, 255, 255, 0.11);
 
       &-dark {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -32,8 +34,9 @@
   &__heading {
     font: normal 24px ﻿Montserrat;
     text-transform: uppercase;
-    padding: 46px 0 34px;
+    padding: 41px 0 29px;
     width: 256px;
+    box-sizing: border-box;
 
     text-align: center;
 
@@ -53,8 +56,9 @@
 
   &__content {
     //border: 1px solid yellow;
-    padding-top: 32px;
+    padding-top: 28px;
     padding-bottom: 38px;
+    box-sizing: border-box;
     height: 360px;
 
     &--xl {
@@ -86,14 +90,14 @@
     font-size: 14px;
     color: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
-    margin-top: 24px;
+    margin-top: 16px;
   }
 
   &__separator {
     border: 2px solid $bg-font-border--color;
     width: 60px;
-    margin-top: 39px;
-    margin-bottom: 31px;
+    margin-top: 36px;
+    margin-bottom: 30px;
 
     &--xl {
       margin-top: 49px;
