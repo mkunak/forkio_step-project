@@ -23,10 +23,10 @@
 
   &__description {
     margin-bottom: 37px;
-    font-family: Lato, Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 14px;
     color: $description--color;
-    line-height: 2;
+    line-height: 1.5;
   }
 
   &__img {
@@ -34,6 +34,4 @@
     width: 716px;
     //transform: translateX(50%);
   }
-
 }
-
