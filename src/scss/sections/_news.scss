@@ -1,7 +1,7 @@
 @import "../variables";
 
 .news {
-    background-image: url("../img/news/news-bg.jpeg");
+    background-image: url("../img/news/news-bg-320.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -19,12 +19,15 @@
     }
 
     &-item {
+        padding-bottom: 45px;
+
         &__img {
-            padding-bottom: 41px;
+            &-wrapper {
+                padding-bottom: 41px;
+            }
         }
 
         &__text {
-            padding-bottom: 41px;
             color: $color-white;
             font-family: Lato, sans-serif;
             font-weight: bold;
@@ -34,11 +37,13 @@
     }
 
     &__footer {
-        border-bottom: 2px solid $border-color;
+        &-text { display: none; }
+    }
+
+    &__divider {
         margin-right: 10px;
         margin-left: 10px;
-
-        &-text { display: none; }
+        border-bottom: 2px solid $border-color;
     }
 }
 
