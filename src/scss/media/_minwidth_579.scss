@@ -1,8 +1,10 @@
-@media only screen and (min-width: 1090px) {
+@media only screen and (min-width: 579px) {
 
     // section prices:
 
     .prices {
+        background: url("../img/prices/prices-background.png") no-repeat center/cover;
+        background-color: #4b3b4e;
 
         &__items {
             margin-top: 44px;
@@ -12,9 +14,9 @@
                 max-height: 1227px;
 
                 display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-around;
+                flex-direction: column;
+                flex-wrap: wrap-reverse;
+                align-content: space-evenly;
             }
         }
 
@@ -23,17 +25,17 @@
             align-self: center;
 
             &--xl {
-                order: 0;
-                margin-top: 0;
+                order: 3;
+                margin-top: 42px;
             }
 
             &:first-child {
-                order: 0;
+                order: 2;
             }
 
             &:last-child {
-                order: 0;
-                margin-top: 0;
+                order: 1;
+                margin-top: 92px;
             }
         }
     }

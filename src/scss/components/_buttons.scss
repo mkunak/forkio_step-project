@@ -1,107 +1,107 @@
 .btn {
-  font-family: Montserrat, Arial, sans-serif;
-  text-decoration: none;
-  outline: none;
-  border-radius: 30px;
+    font-family: Montserrat, Arial, sans-serif;
+    text-decoration: none;
+    outline: none;
+    border-radius: 30px;
 
-  &__description {
-    font-size: 14px;
-    color: $description--color;
-    margin-top: 13px;
-  }
-
-  &--buy-size {
-    font-size: 15px;
-    font-weight: bold;
-    border-width: 1px;
-    border-style: solid;
-    text-transform: capitalize;
-    padding: 12px 24px;
-  }
-
-  &--download-size {
-    font-size: 18px;
-    font-weight: bold;
-    border-width: 1px;
-    border-style: solid;
-    text-transform: capitalize;
-    padding: 15px 30px;
-  }
-
-  &--dark {
-    color: $color-white;
-    background-color: $bg-font-border--color;
-    border-color: $bg-font-border--color;
-
-    &:hover {
-      color: $bg-font-border--color;
-      background-color: $color-white;
+    &--buy-size {
+        font-size: 15px;
+        font-weight: bold;
+        border-width: 1px;
+        border-style: solid;
+        text-transform: capitalize;
+        padding: 12px 24px;
     }
-  }
 
-  &--purchase-size {
-    font-size: 15px;
-    font-weight: normal;
-    border-width: 1px;
-    border-style: solid;
-    text-transform: uppercase;
-    padding: 15px 37px;
-
-    &-xl {
-      font-size: 16px;
-      padding: 20px 50px;
+    &--download-size {
+        font-size: 18px;
+        font-weight: bold;
+        border-width: 1px;
+        border-style: solid;
+        text-transform: capitalize;
+        padding: 15px 30px;
     }
-  }
 
-  &--transparent {
-    color: $color-white;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0);
-
-    &:hover {
-      font-weight: bold;
-      color: rgba(127, 109, 120, 255);
-      background-color: rgba(255, 255, 255, 0.75);
+    &__description {
+        font-size: 14px;
+        color: $description--color;
+        margin-top: 13px;
     }
-  }
+
+    &--dark {
+        color: $color-white;
+        background-color: $bg-font-border--color;
+        border-color: $bg-font-border--color;
+
+        &:hover {
+            color: $bg-font-border--color;
+            background-color: $color-white;
+        }
+    }
+
+    &--purchase-size {
+        font-size: 15px;
+        font-weight: normal;
+        border-width: 1px;
+        border-style: solid;
+        text-transform: uppercase;
+        padding: 15px 37px;
+
+        &-xl {
+            font-size: 16px;
+            padding: 20px 50px;
+        }
+    }
+
+    &--transparent {
+        color: $color-white;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0);
+
+        &:hover {
+            font-weight: bold;
+            color: rgba(127, 109, 120, 255);
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+    }
 }
 
 .btn-sm {
-  display: flex;
+    display: flex;
 
-  &__button {
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    background-image: linear-gradient(#fbfbfb, #e4e4e4);
-    border: 1px solid #b6b6b6;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
+    &__button {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        background-image: linear-gradient(#fbfbfb, #e4e4e4);
+        border: 1px solid #b6b6b6;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
 
-    &:hover {
-      background-image: linear-gradient(#fbfbfb, #cecece);
-      border: 1px solid #9b9b9b;
+        &:hover {
+            background-image: linear-gradient(#fbfbfb, #cecece);
+            border: 1px solid #9b9b9b;
+        }
     }
-  }
 
-  &__counter {
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    border: 1px solid #b6b6b6;
-    border-bottom-right-radius: 2px;
-    border-top-right-radius: 2px;
-    border-left: none;
-    padding: 6px 10px;
+    &__counter {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000;
+        border: 1px solid #b6b6b6;
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px;
+        border-left: none;
+        padding: 6px 10px;
 
-    &:hover {
-      color: #0504ff;
+        &:hover {
+            color: #0504ff;
+        }
     }
-  }
 
-  &__octicon {
-    vertical-align: bottom;
-  }
+    &__octicon {
+        vertical-align: bottom;
+    }
 }
