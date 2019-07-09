@@ -1,75 +1,75 @@
 @import "../variables";
 
 @media only screen and (min-width: 481px) {
-  /*** Nav-bar **/
+    /*** Nav-bar **/
 
-  .nav-bar {
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
-  .nav-bar .container {
-    display: block;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .logo {
-    float: left;
-
-    &__link {
-      display: flex;
-      text-decoration: none;
+    .nav-bar {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    .nav-bar .container {
+        display: block;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
-    &__text {
-      display: flex;
-      align-self: center;
-      color: $bg-font-border--color;
-      font-size: 24px;
-      font-family: Lato, sans-serif;
-      font-weight: 700;
-      padding-left: 17px;
-    }
-  }
+    .logo {
+        float: left;
 
-  .main-menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: static;
-    width: 100%;
-    background-color: transparent;
-    clear: both;
+        &__link {
+            display: flex;
+            text-decoration: none;
+        }
 
-    &__item {
-      padding-top: 15px;
-      padding-bottom: 0;
-      border-bottom: none;
+        &__text {
+            display: flex;
+            align-self: center;
+            color: $bg-font-border--color;
+            font-size: 24px;
+            font-family: Lato, sans-serif;
+            font-weight: 700;
+            padding-left: 17px;
+        }
     }
 
-    &__link {
-      font-size: 16px;
-      color: $bg-font-border--color;
-      font-weight: 700;
-      padding-right: 24px;
-      padding-left: 24px;
+    .main-menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: static;
+        width: 100%;
+        background-color: transparent;
+        clear: both;
 
-      &--active::before { display: none; }
+        &__item {
+            padding-top: 15px;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        &__link {
+            font-size: 16px;
+            color: $bg-font-border--color;
+            font-weight: 700;
+            padding-right: 24px;
+            padding-left: 24px;
+
+            &--active::before { display: none; }
+        }
     }
-  }
 
-  .menu-burger { display: none; }
+    .menu-burger { display: none; }
 
-  .btn--buy-size { float: right; }
+    .btn--buy-size { float: right; }
 
-  /*** End nav-bar ***/
+    /*** End nav-bar ***/
 
-  /*** News section ***/
+    /*** News section ***/
 
-  .section-heading--news-size {
-    font-size: 42px;
-    padding-bottom: 90px;
-  }
+    .section-heading--news-size {
+        font-size: 42px;
+        padding-bottom: 90px;
+    }
 
   .news {
     background-image: url("../img/news/news-bg-768.jpeg");
@@ -77,12 +77,12 @@
     padding-bottom: 80px;
     background-position: 50% 35%;
 
-    &__content {
-      display: flex;
-      flex-wrap: wrap;
-      padding-right: 5px;
-      padding-left: 5px;
-    }
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
 
     &-item {
       display: flex;
@@ -128,125 +128,115 @@
     }
   }
 
-  /*** End news ***/
+    /*** End news ***/
 
-  // section header:
+    // header section:
 
-  .section-heading--header-size {
-    font-size: 72px;
-  }
-
-  .header__slogan {
-    font-size: 24px;
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .btn-description-wrap {
-    width: 100%;
-    bottom: -64px;
-  }
-
-  .btn--download-size {
-    font-size: 21px;
-    padding: 18px 63px;
-  }
-
-  .btn__description {
-    margin-top: 19px;
-  }
-
-  // section rev-editor:
-
-  .rev-editor {
-    margin-top: 158px;
-
-    &__description {
-      font-size: 21px;
-      line-height: 1.5;
-      width: 100%;
-      margin: 23px auto 0;
+    .section-heading--header-size {
+        font-size: 72px;
     }
 
-    &__items {
-      width: 400px;
-      height: auto;
-      margin: 23px auto 98px;
-    }
-  }
+    .header {
+        padding-top: 50px;
+        height: 682px;
 
-  .section-heading--rev-editor-size {
-    font-size: 42px;
-    width: 100%;
-  }
+        &__slogan {
+            font-size: 24px;
+            margin-top: 26px;
+            margin-bottom: 20px;
+        }
 
-  // section advantages:
-
-  .section-heading--advantages-size {
-    font-size: 42px;
-    width: 100%;
-  }
-
-  .advantages {
-    padding-top: 45px;
-    padding-bottom: 45px;
-
-    &__items {
-      margin-top: 55px;
-      margin-bottom: 0px;
-      text-align: left;
-
-      &--flex {
-        display: flex;
-        flex-direction: column;
-      }
+        &__description {
+            font-size: 14px;
+        }
     }
 
-    &__item--flex {
-      display: flex;
+    .btn-description-wrap {
+        bottom: -64px;
     }
 
-    &__icon--flex {
-      min-width: 150px;
-
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
+    .btn--download-size {
+        font-size: 21px;
+        padding: 18px 63px;
     }
 
-    &__context {
-      //margin-left: 24px;
-
-      &--flex{
-
-      }
+    .btn__description {
+        margin-top: 19px;
     }
 
-    &__heading {
-      margin: 0 0 20px;
-      font-size: 16px;
-      color: #323232;
+    // rev-editor section:
+
+    .section-heading--rev-editor-size {
+        font-size: 42px;
     }
 
-    &__description {
-      margin-bottom: 59px;
-      font-family: Montserrat, Arial, sans-serif;
-      font-size: 14px;
-      color: $description--color;
-      line-height: 1.5;
+    .rev-editor {
+        margin-top: 158px;
+        padding-bottom: 98px;
+
+        &__description {
+            font-size: 21px;
+            line-height: 1.5;
+            margin: 38px auto 36px;
+        }
+
+        &__items {
+            width: 400px;
+            height: auto;
+        }
     }
 
-    &__img {
-      height: 475px;
-      width: 933px;
-      //transform: translateX(50%);
+    // advantages section:
+
+    .section-heading--advantages-size {
+        font-size: 42px;
     }
-  }
 
-  // section prices:
+    .advantages {
+        padding-top: 54px;
+        padding-bottom: 23px;
 
-  .section-heading--prices-size {
-    font-size: 42px;
-    width: 100%;
-  }
+        &__items {
+            margin-top: 60px;
+            margin-bottom: 0;
+            text-align: left;
+
+            &--flex {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__item--flex {
+            display: flex;
+        }
+
+        &__icon--flex {
+            min-width: 25%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        &__heading {
+            margin: 0 0 20px;
+        }
+
+        &__description {
+            margin-bottom: 60px;
+        }
+
+        &__img {
+            height: 519px;
+            width: 977px;
+        }
+    }
+
+    // prices section:
+
+    .section-heading--prices-size {
+        font-size: 42px;
+        width: 100%;
+    }
 }

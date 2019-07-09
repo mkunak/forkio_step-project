@@ -1,117 +1,117 @@
 .prices {
-  font-family: Montserrat, Arial, sans-serif;
-  background-color: #4b3b4e;
+    font-family: Montserrat, Arial, sans-serif;
+    background-color: #4b3b4e;
 
-  &__items {
-    margin-top: 40px;
-    margin-bottom: 93px;
+    &__items {
+        margin-top: 40px;
+        margin-bottom: 93px;
 
-    &--flex {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-
-  &__item {
-    box-sizing: border-box;
-    display: inline-block;
-    color: $color-white;
-    margin-top: 13px;
-    align-self: center;
-
-    &--transparent {
-      background-color: rgba(255, 255, 255, 0.11);
-
-      &-dark {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-    }
-  }
-
-  &__heading {
-    box-sizing: border-box;
-    font: normal 24px ﻿Montserrat;
-    text-align: center;
-    text-transform: uppercase;
-    width: 257px;
-    padding: 41px 0 29px;
-
-    &--xl {
-      width: 290px;
-      padding: 51px 0 43px;
+        &--flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
-    &--transparent {
-      background-color: rgba(255, 255, 255, 0.06);
+    &__item {
+        box-sizing: border-box;
+        display: inline-block;
+        color: $color-white;
+        margin-top: 13px;
+        align-self: center;
 
-      &-dark {
-        background-color: rgba(0, 0, 0, 0.11);
-      }
-    }
-  }
+        &--transparent {
+            background-color: rgba(255, 255, 255, 0.11);
 
-  &__content {
-    //border: 1px solid yellow;
-    box-sizing: border-box;
-    height: 360px;
-    padding-top: 28px;
-    padding-bottom: 38px;
-
-    &--xl {
-      height: 450px;
-      padding-top: 15px;
-      padding-bottom: 47px;
+            &-dark {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
     }
 
-    &--flex {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    &__heading {
+        box-sizing: border-box;
+        font: normal 24px ﻿Montserrat;
+        text-align: center;
+        text-transform: uppercase;
+        width: 257px;
+        padding: 41px 0 29px;
+
+        &--xl {
+            width: 290px;
+            padding: 51px 0 43px;
+        }
+
+        &--transparent {
+            background-color: rgba(255, 255, 255, 0.06);
+
+            &-dark {
+                background-color: rgba(0, 0, 0, 0.11);
+            }
+        }
     }
-  }
 
-  &__price {
-    font-size: 60.18px;
+    &__content {
+        //border: 1px solid yellow;
+        box-sizing: border-box;
+        height: 360px;
+        padding-top: 28px;
+        padding-bottom: 38px;
 
-    &--xl {
-      font-size: 82px;
+        &--xl {
+            height: 450px;
+            padding-top: 15px;
+            padding-bottom: 47px;
+        }
+
+        &--flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
-    &--bold {
-      font-weight: bold;
+    &__price {
+        font-size: 60.18px;
+
+        &--xl {
+            font-size: 82px;
+        }
+
+        &--bold {
+            font-weight: bold;
+        }
     }
-  }
 
-  &__term {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.3);
-    text-transform: uppercase;
-    margin-top: 16px;
-  }
-
-  &__separator {
-    border: 2px solid $bg-font-border--color;
-    width: 60px;
-    margin-top: 36px;
-    margin-bottom: 30px;
-
-    &--xl {
-      margin-top: 49px;
-      margin-bottom: 41px;
+    &__term {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.3);
+        text-transform: uppercase;
+        margin-top: 16px;
     }
-  }
 
-  &__features {
-    font-size: 16px;
-    text-transform: capitalize;
-    line-height: 1.75;
-  }
+    &__separator {
+        border: 2px solid $bg-font-border--color;
+        width: 60px;
+        margin-top: 36px;
+        margin-bottom: 30px;
+
+        &--xl {
+            margin-top: 49px;
+            margin-bottom: 41px;
+        }
+    }
+
+    &__features {
+        font-size: 16px;
+        text-transform: capitalize;
+        line-height: 1.75;
+    }
 }
 
 .btn--flex {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }

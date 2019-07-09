@@ -1,54 +1,53 @@
 .section-heading{
-  font-family: Montserrat, Arial, sans-serif;
-  font-weight: bold;
-  margin: 0 auto;
-
-  &--header-size {
-    font-size: 48px;
-    text-align: center;
-  }
-
-  &--rev-editor-size {
-    font-size: 26px;
-    width: 295px;
-    text-align: center;
-  }
-
-  &--advantages-size {
-    font-size: 32px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
     width: 100%;
     text-align: center;
-  }
 
-  &--prices-size {
-    font-size: 28px;
-    width: 295px;
-    text-align: center;
-  }
+    &--header-size {
+        font-size: 48px;
+        line-height: 1.2;
+    }
 
-  &--news-size {
-    font-size: 36px;
-    line-height: 41px;
-    padding-bottom: 50px;
-  }
+    &--rev-editor-size {
+        font-size: 26px;
+        line-height: 1.6;
+    }
 
-  &--uppercase {
-    text-transform: uppercase;
-  }
+    &--advantages-size {
+        font-size: 32px;
+        line-height: 1.2;
+    }
 
-  &--capitalize {
-    text-transform: capitalize;
-  }
+    &--prices-size {
+        font-size: 28px;
+        line-height: 1.6;
+    }
 
-  &--light {
-    color: $color-white;
-  }
+    &--news-size {
+        font-size: 36px;
+        line-height: 41px;
+        padding-bottom: 50px;
+    }
 
-  &--dark {
-    color: $bg-font-border--color;
-  }
+    &--uppercase {
+        text-transform: uppercase;
+    }
 
-  &--extradark {
-    color: #635C73;
-  }
+    &--capitalize {
+        text-transform: capitalize;
+    }
+
+    &--light {
+        color: $color-white;
+    }
+
+    &--dark {
+        color: $bg-font-border--color;
+    }
+
+    &--extradark {
+        color: #635C73;
+    }
 }

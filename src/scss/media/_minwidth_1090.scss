@@ -13,44 +13,39 @@
 
       // section prices:
 
-  .prices {
-    //background: url("../img/prices/prices-background.png") no-repeat center/cover;
-    //background-color: #4b3b4e;
+    .prices {
 
-    &__items {
-      margin-top: 44px;
-      margin-bottom: 93px;
+        &__items {
+            margin-top: 44px;
+            margin-bottom: 93px;
 
-      &--flex {
-        max-height: 1227px;
+            &--flex {
+                max-height: 1227px;
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        //align-content: space-evenly;
-        //align-items: center;
-        justify-content: space-around;
-      }
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+            }
+        }
+
+        &__item {
+            margin: 0;
+            align-self: center;
+
+            &--xl {
+                order: 0;
+                margin-top: 0;
+            }
+
+            &:first-child {
+                order: 0;
+            }
+
+            &:last-child {
+                order: 0;
+                margin-top: 0;
+            }
+        }
     }
-
-    &__item {
-      //display: inline-block;
-      margin: 0;
-      align-self: center;
-
-      &--xl {
-        order: 0;
-        margin-top: 0;
-      }
-
-      &:first-child {
-        order: 0;
-      }
-
-      &:last-child {
-        order: 0;
-        margin-top: 0;
-      }
-    }
-  }
 }
