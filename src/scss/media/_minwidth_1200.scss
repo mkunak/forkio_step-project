@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1200px) {
+
+    // section news:
+
+    .news-item {
+        padding-right: 55px;
+        padding-left: 55px;
+        padding-bottom: 60px;
+
+        &:nth-child(odd) { padding-right: 55px; }
+
+        &:nth-child(even) { padding-left: 55px; }
+    }
+}
