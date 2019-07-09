@@ -1,8 +1,93 @@
 @media only screen and (min-width: 993px) {
 
-  // section prices:
+    // section header:
 
-  .section-heading--prices-size {
-    font-size: 48px;
-  }
+    .section-heading--header-size {
+        font-size: 82px;
+    }
+
+    .header {
+        padding-top: 60px;
+        height: 700px;
+
+        &__slogan {
+            font-size: 30px;
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+    }
+
+    .btn-description-wrap {
+        bottom: -64px;
+    }
+
+    .btn--download-size {
+        font-size: 21px;
+        padding: 18px 63px;
+    }
+
+    .btn__description {
+        margin-top: 19px;
+    }
+
+    // rev-editor section:
+
+    .section-heading--rev-editor-size {
+        font-size: 54px;
+    }
+
+    .rev-editor {
+        margin-top: 129px;
+        padding-bottom: 70px;
+    }
+
+    // advantages section:
+
+    .section-heading--advantages-size {
+        font-size: 48px;
+        line-height: 1;
+        float: right;
+        text-align: left;
+        width: 53%;
+        margin-bottom: 50px;
+    }
+
+    .advantages {
+        padding-top: 84px;
+        padding-bottom: 33px;
+
+        &__items {
+            margin-top: 20px;
+            text-align: left;
+            float: left;
+            max-width: 45%;
+
+            &--flex {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__item--flex {
+            display: flex;
+        }
+
+        &__description {
+            margin-bottom: 37px;
+        }
+
+        &__img {
+            margin-right: -50%;
+        }
+    }
+
+    // section prices:
+
+    .section-heading--prices-size {
+        font-size: 48px;
+    }
 }
