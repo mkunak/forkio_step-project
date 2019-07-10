@@ -17,8 +17,17 @@
         box-sizing: border-box;
         display: inline-block;
         color: $color-white;
+        width: 257px;
         margin-top: 13px;
+
         align-self: center;
+        flex: 0 1 257px;
+
+        &--xl {
+            width: 290px;
+
+            flex: 0 1 290px;
+        }
 
         &--transparent {
             background-color: rgba(255, 255, 255, 0.11);
@@ -34,11 +43,9 @@
         font: normal 24px ﻿Montserrat;
         text-align: center;
         text-transform: uppercase;
-        width: 257px;
         padding: 41px 0 29px;
 
         &--xl {
-            width: 290px;
             padding: 51px 0 43px;
         }
 
@@ -52,14 +59,11 @@
     }
 
     &__content {
-        //border: 1px solid yellow;
         box-sizing: border-box;
-        height: 360px;
         padding-top: 28px;
         padding-bottom: 38px;
 
         &--xl {
-            height: 450px;
             padding-top: 15px;
             padding-bottom: 47px;
         }
@@ -72,7 +76,7 @@
     }
 
     &__price {
-        font-size: 60.18px;
+        font-size: 60px;
 
         &--xl {
             font-size: 82px;
@@ -102,7 +106,16 @@
         }
     }
 
-    &__features {
+    &__features-wrap {
+        min-height: 84px;
+        text-align: center;
+
+        &--xl {
+            min-height: calc(84px + 37.6px);
+        }
+    }
+
+    &__feature {
         font-size: 16px;
         text-transform: capitalize;
         line-height: 1.75;

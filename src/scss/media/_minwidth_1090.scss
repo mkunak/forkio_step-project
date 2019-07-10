@@ -1,51 +1,17 @@
 @media only screen and (min-width: 1090px) {
 
-  // section news:
+    // section news:
 
-  .news-item {
-    padding-right: 30px;
-    padding-left: 30px;
+    .news-item {
+        padding-right: 30px;
+        padding-left: 30px;
 
-    &:nth-child(odd) { padding-right: 30px; }
-
-    &:nth-child(even) { padding-left: 30px; }
-  }
-
-      // section prices:
-
-    .prices {
-
-        &__items {
-            margin-top: 44px;
-            margin-bottom: 93px;
-
-            &--flex {
-                max-height: 1227px;
-
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-around;
-            }
+        &:nth-child(odd) {
+            padding-right: 30px;
         }
 
-        &__item {
-            margin: 0;
-            align-self: center;
-
-            &--xl {
-                order: 0;
-                margin-top: 0;
-            }
-
-            &:first-child {
-                order: 0;
-            }
-
-            &:last-child {
-                order: 0;
-                margin-top: 0;
-            }
+        &:nth-child(even) {
+            padding-left: 30px;
         }
     }
 }
