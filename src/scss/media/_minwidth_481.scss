@@ -1,7 +1,8 @@
 @import "../variables";
 
 @media only screen and (min-width: 481px) {
-    /*** Nav-bar **/
+
+    // nav-bar section:
 
     .nav-bar {
         padding-top: 22px;
@@ -54,23 +55,15 @@
             padding-right: 24px;
             padding-left: 24px;
 
-            &--active::before {
-                display: none;
-            }
+            &--active::before { display: none; }
         }
     }
 
-    .menu-burger {
-        display: none;
-    }
+    .menu-burger { display: none; }
 
-    .btn--buy-size {
-        float: right;
-    }
+    .btn--buy-size { float: right; }
 
-    /*** End nav-bar ***/
-
-    /*** News section ***/
+    // news section:
 
     .section-heading--news-size {
         font-size: 42px;
@@ -137,8 +130,6 @@
             margin-left: 20px;
         }
     }
-
-    /*** End news ***/
 
     // header section:
 
