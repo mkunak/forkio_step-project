@@ -19,17 +19,26 @@
     &__img-hover {
         position: absolute;
         opacity: 0;
+
+        &--transitioned { @include transitioned; }
     }
 
-    &__text {display: none}
+    &__text {
+        display: none;
+
+        &--transitioned { @include transitioned; }
+    }
 }
+
+.logo__link:hover .logo__img-hover { opacity: 1; }
+
+.logo__link:hover .logo__text { color: $color-white; }
 
 .main-menu {
     position: absolute;
     top: 104px;
-    right: 15px;
+    right: -300px;
     z-index: 1;
-    display: none;
     width: 290px;
     background-color: #333;
 
@@ -48,6 +57,10 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
 
+        &--transitioned { @include transitioned; }
+
+        &:hover { color: #FEFEFE; }
+
         &--active {
             color: $bg-font-border--color;
 
@@ -61,6 +74,12 @@
                 height: 53px;
             }
         }
+    }
+
+    &--animated {
+        right: 15px;
+        animation-name: slideLeft;
+        animation-duration: 1.5s;
     }
 }
 
@@ -77,8 +96,15 @@
             margin-left: 6px;
         }
 
-        &--long {
-            width: 26px;
-        }
+        &--long { width: 26px; }
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        right: -300px;
+    }
+    100% {
+        right: 15px;
     }
 }
