@@ -48,19 +48,24 @@ function js() {											//Copy fonts to dir "dev"
 }
 
 function scripts() {
-    return gulp.src('src/sections/**/*.js')
+    return gulp.src('src/js/*.js')
         .pipe(babel({											//babel
             presets: ['@babel/env']
         }))
         .pipe(terser({											//terser
             toplevel: true
         }))														//minify js
-        .pipe(concat('all.js'))									//concat all js files
+        .pipe(concat('script.js'))                          //concat all js files
         .pipe(rename(function (path) {							// function of rename extname for .css
             path.extname = ".min.js";
         }))
         .pipe(gulp.dest('./dist/js'))
         .pipe(browserSync.stream());
+}
+
+function cleanjs() {
+    return gulp.src('./dist/js/script.js', {read: false})       //remove concated js file
+        .pipe(clean())
 }
 
 function forSass() {
@@ -97,6 +102,7 @@ gulp.task('sass', forSass);
 gulp.task('watch', watch);
 gulp.task('fonts', fonts);
 gulp.task('js', js);
-gulp.task('build', gulp.series('cleandev', gulp.series(img, fonts, js, scripts, forSass)));
+gulp.task('cleanjs', cleanjs);
+gulp.task('build', gulp.series('cleandev', gulp.series(img, fonts, js, cleanjs, scripts, forSass)));
 gulp.task('dev', gulp.series('build', watch));
 gulp.task('default', gulp.series('build', 'dev'));
