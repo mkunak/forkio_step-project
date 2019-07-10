@@ -14,26 +14,26 @@
         <div class="logo">
             <a class="logo__link" href="/">
                 <img class="logo__img" src="dist/img/nav/logo.png" height="41" width="43"/>
-                <img class="logo__img-hover" src="dist/img/nav/logo-hover.png" height="41" width="43"/>
-                <p class="logo__text">FORKIO</p>
+                <img class="logo__img-hover logo__img-hover--transitioned" src="dist/img/nav/logo-hover.png" height="41" width="43"/>
+                <p class="logo__text logo__text--transitioned">FORKIO</p>
             </a>
         </div>
-        <button class="btn btn--dark btn--buy-size">Buy Now</button>
-        <ul class="main-menu">
+        <button class="btn btn--dark btn--buy-size btn--transitioned">Buy Now</button>
+        <ul id="main-menu" class="main-menu">
             <li class="main-menu__item">
-                <a href="" class="main-menu__link main-menu__link--active">Overview</a>
+                <a href="" class="main-menu__link main-menu__link--active main-menu__link--transitioned">Overview</a>
             </li>
             <li class="main-menu__item">
-                <a href="" class="main-menu__link">About Fork</a>
+                <a href="" class="main-menu__link main-menu__link--transitioned">About Fork</a>
             </li>
             <li class="main-menu__item">
-                <a href="" class="main-menu__link">Buying Options</a>
+                <a href="" class="main-menu__link main-menu__link--transitioned">Buying Options</a>
             </li>
             <li class="main-menu__item">
-                <a href="" class="main-menu__link">Support</a>
+                <a href="" class="main-menu__link main-menu__link--transitioned">Support</a>
             </li>
         </ul>
-        <div class="menu-burger">
+        <div id="burger-button" class="menu-burger">
             <div class="menu-burger__line menu-burger__line--short"></div>
             <div class="menu-burger__line menu-burger__line--long"></div>
             <div class="menu-burger__line menu-burger__line--long"></div>
@@ -174,32 +174,44 @@
             Are Talking About Fork</h2>
         <div class="news__content">
             <div class="news-item">
-                <img class="news-item__img" src="dist/img/news/news-1.png" height="43" width="165"/>
+                <div class="news-item__img-wrapper">
+                    <img class="news-item__img" src="dist/img/news/news-1.png" height="43" width="165"/>
+                </div>
                 <p class="news-item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
                     dignissim magna. Sed varius urna et pulvinar venenatis. </p>
             </div>
             <div class="news-item">
-                <img class="news-item__img" src="dist/img/news/news-2.png" height="50" width="148"/>
+                <div class="news-item__img-wrapper">
+                    <img class="news-item__img" src="dist/img/news/news-2.png" height="50" width="148"/>
+                </div>
                 <p class="news-item__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus
                     molestie neque ac, mollis eleifend nibh.</p>
             </div>
             <div class="news-item">
-                <img class="news-item__img" src="dist/img/news/news-3.png" height="64" width="64"/>
+                <div class="news-item__img-wrapper">
+                    <img class="news-item__img" src="dist/img/news/news-3.png" height="64" width="64"/>
+                </div>
                 <p class="news-item__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat
                     fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
             </div>
             <div class="news-item">
-                <img class="news-item__img" src="dist/img/news/news-4.png" height="24" width="225"/>
+                <div class="news-item__img-wrapper">
+                    <img class="news-item__img" src="dist/img/news/news-4.png" height="24" width="225"/>
+                </div>
                 <p class="news-item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
                     dignissim magna. Sed varius urna et pulvinar venenatis. </p>
             </div>
             <div class="news-item">
-                <img class="news-item__img" src="dist/img/news/news-5.png" height="34" width="166"/>
+                <div class="news-item__img-wrapper">
+                    <img class="news-item__img" src="dist/img/news/news-5.png" height="34" width="166"/>
+                </div>
                 <p class="news-item__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla
                     faucibus lorem id arcu consequat faucibus. </p>
             </div>
             <div class="news-item">
-                <img class="news-item__img" src="dist/img/news/news-6.png" height="34" width="108"/>
+                <div class="news-item__img-wrapper">
+                    <img class="news-item__img" src="dist/img/news/news-6.png" height="34" width="108"/>
+                </div>
                 <p class="news-item__text">Fusce pharetra erat id odio blandit, nec
                     pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
             </div>
@@ -207,8 +219,9 @@
         <div class="news__footer">
             <p class="news__footer-text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis
                 vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci.
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         </div>
+        <div class="news__divider"></div>
     </div>
 </section>
 
@@ -223,7 +236,9 @@
                     <p class="prices__price">&#36;<span class="prices__price--bold">29</span></p>
                     <p class="prices__term">per month</p>
                     <div class="prices__separator"></div>
-                    <p class="prices__features">personal license</p>
+                    <div class="prices__features-wrap">
+                        <p class="prices__feature">personal license</p>
+                    </div>
                     <div class="btn--flex">
                         <button class="btn btn--purchase-size btn--transparent">purchase</button>
                     </div>
@@ -235,8 +250,10 @@
                     <p class="prices__price">&#36;<span class="prices__price--bold">59</span></p>
                     <p class="prices__term">per month</p>
                     <div class="prices__separator"></div>
-                    <p class="prices__features">Professional License</p>
-                    <p class="prices__features">E-mail Support</p>
+                    <div class="prices__features-wrap">
+                        <p class="prices__feature">Professional License</p>
+                        <p class="prices__feature">E-mail Support</p>
+                    </div>
                     <div class="btn--flex">
                         <button class="btn btn--purchase-size btn--transparent">purchase</button>
                     </div>
@@ -248,8 +265,10 @@
                     <p class="prices__price prices__price--xl">&#36;<span class="prices__price--bold">99</span></p>
                     <p class="prices__term">per month</p>
                     <div class="prices__separator prices__separator--xl"></div>
-                    <p class="prices__features">1-12 Team Members</p>
-                    <p class="prices__features">Phone Support</p>
+                    <div class="prices__features-wrap prices__features-wrap--xl">
+                        <p class="prices__feature">1-12 Team Members</p>
+                        <p class="prices__feature">Phone Support</p>
+                    </div>
                     <div class="btn--flex">
                         <button class="btn btn--purchase-size btn--purchase-size-xl btn--transparent">purchase</button>
                     </div>
@@ -261,8 +280,10 @@
                     <p class="prices__price">&#36;<span class="prices__price--bold">159</span></p>
                     <p class="prices__term">per month</p>
                     <div class="prices__separator"></div>
-                    <p class="prices__features">Unlimited Team Members</p>
-                    <p class="prices__features">24/ 7 Phone Support</p>
+                    <div class="prices__features-wrap">
+                        <p class="prices__feature">Unlimited Team Members</p>
+                        <p class="prices__feature">24/ 7 Phone Support</p>
+                    </div>
                     <div class="btn--flex">
                         <button class="btn btn--purchase-size btn--transparent">purchase</button>
                     </div>
