@@ -1,31 +1,40 @@
-﻿# forkio_step-project
+# forkio_step-project
 
 Информация о проекте:
 
-1. Список использованных технологий:
-1.1. Предпроцессор SCSS
-1.2. Сборщик проекта Gulp. Перечень пакетов Gulp:
-'gulp-sass'				//sass
-'browser-sync'			//runtime watcher and changer
-'gulp-clean'			//cleaner product directory "dev"
-'gulp-clean-css'			//CSS minifier
-'gulp-rename'			//rename files after minify
-'gulp-concat'			//concat for js
-'gulp-terser'			//minify for js
-'gulp-autoprefixer'		//cross-browser compatibility css
-'gulp-babel'			//cross-browser compatibility js
-'gulp-imagemin'			//minify for images
+1. Список использованных технологий:    
+1.1. HTML5    
+1.2. CSS3   
+1.3. JavaScript     
+1.4. Система конроля версий git    
+1.5. Предпроцессор SCSS     
+1.6. Сборщик проекта Gulp.   
+Перечень пакетов Gulp:  
+'gulp-sass' 	
+'browser-sync'  
+'gulp-clean'			
+'gulp-clean-css'			
+'gulp-rename'			
+'gulp-concat'   
+'gulp-terser'			
+'gulp-autoprefixer'		
+'gulp-babel'			
+'gulp-imagemin'			
 
-2. Состав участников проекта:
-Андрей Волков
+2. Состав участников проекта:   
+Андрей Волков   
 Николай Кунак
 
 3. Задачи участников.
+
+Работа над проэктом осуществялась с использованием методологии БЭМ и с учетом адптивной и резиновой верстки.
+   
 3.1. Андрей Волков:
-- Сверстать шапку сайта с верхним меню (включая выпадающее меню при малом разрешении экрана). 
-- Сверстать секцию People Are Talking About Fork.
+- Верстка шапки сайта с верхним меню. Верстка выпадающего меню на экранах с разрешением до 480рх включительно. "Появление" меню осуществляется с помощью добавления класса в соответствующий блок с помощью чистого JavaScript.
+- Верстка секции People Are Talking About Fork.
+   
 3.2. Николай Кунак:
-- Сверстать блок Revolutionary Editor. Кнопки watch/star/fork на макете сделаны одним слоем, поэтому с макета не получится скачать иконки. Сами кнопки надо сделать, чтобы выглядели как здесь справа вверху (оттуда же с помощью инспектора можно взять все SVG иконки и скачать используемые на гитхабе стили). 
-- Светстать секцию Here is what you get. 
-- Сверстать секцию Fork Subscription Pricing. В блоке с прайсингом третий элемент всегда будет "выделен" и будет больше других (то есть не по клику/ховеру, а статически).
+- Верстка блока Revolutionary Editor. 
+- Верстка секции Here is what you get. 
+- Верстка секции Fork Subscription Pricing.
 
