@@ -22,7 +22,9 @@
         padding: 15px 30px;
     }
 
-    &--transitioned { @include transitioned; }
+    &--transitioned {
+        @include transitioned;
+    }
 
     &__description {
         font-size: 14px;

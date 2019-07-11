@@ -1,7 +1,6 @@
 .prices {
     font-family: Montserrat, Arial, sans-serif;
     background-color: #4b3b4e;
-    margin-top: -10px;
 
     &__items {
         margin-top: 40px;
@@ -18,17 +17,9 @@
         box-sizing: border-box;
         display: inline-block;
         color: $color-white;
-        width: 257px;
         margin-top: 13px;
 
         align-self: center;
-        flex: 0 1 257px;
-
-        &--xl {
-            width: 290px;
-
-            flex: 0 1 290px;
-        }
 
         &--transparent {
             background-color: rgba(255, 255, 255, 0.11);
@@ -98,12 +89,10 @@
     &__separator {
         border: 2px solid $bg-font-border--color;
         width: 60px;
-        margin-top: 36px;
-        margin-bottom: 30px;
+        margin: 36px 97px 30px;
 
         &--xl {
-            margin-top: 49px;
-            margin-bottom: 41px;
+            margin: 50px 113px 40px;
         }
     }
 
