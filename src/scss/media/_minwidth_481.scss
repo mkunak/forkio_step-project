@@ -1,7 +1,8 @@
 @import "../variables";
 
 @media only screen and (min-width: 481px) {
-    /*** Nav-bar **/
+
+    // nav-bar section:
 
     .nav-bar {
         padding-top: 22px;
@@ -62,9 +63,7 @@
 
     .btn--buy-size { float: right; }
 
-    /*** End nav-bar ***/
-
-    /*** News section ***/
+    // news section:
 
     .section-heading--news-size {
         font-size: 42px;
@@ -72,6 +71,7 @@
     }
 
     .news {
+        background-image: url("../img/news/news-bg-768.jpeg");
         padding-top: 79px;
         padding-bottom: 80px;
         background-position: 50% 35%;
@@ -84,18 +84,35 @@
         }
 
         &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 50%;
             box-sizing: border-box;
 
-            &:nth-child(4) { padding-top: 35px; }
+            &__img {
+                padding-bottom: 0;
 
-            &:nth-child(odd) { padding-right: 45px; }
+                &-wrapper {
+                    display: flex;
+                    align-items: center;
+                    height: 64px;
+                    padding-bottom: 50px;
+                }
+            }
 
-            &:nth-child(even) { padding-left: 45px; }
+            &:nth-child(odd) {
+                padding-right: 10px;
+            }
+
+            &:nth-child(even) {
+                padding-left: 10px;
+            }
         }
 
         &__footer {
-            padding-top: 60px;
+            padding-right: 30px;
+            padding-left: 30px;
 
             &-text {
                 display: block;
@@ -107,9 +124,12 @@
                 padding-bottom: 15px;
             }
         }
-    }
 
-    /*** End news ***/
+        &__divider {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
 
     // header section:
 
@@ -218,6 +238,42 @@
 
     .section-heading--prices-size {
         font-size: 42px;
-        width: 100%;
+    }
+
+    .prices {
+        background: url("../img/prices/prices-background.png") no-repeat center/cover;
+        background-color: #4b3b4e;
+
+        &__items {
+            margin-top: 44px;
+            margin-bottom: 93px;
+
+            &--flex {
+                max-height: 1227px;
+
+                flex-wrap: wrap-reverse;
+                flex-direction: column;
+                align-content: space-evenly;
+            }
+        }
+
+        &__item {
+            width: calc(257px - 9%);
+            margin: 0;
+
+            &--xl {
+                width: calc(290px - 12%);
+                margin-top: 42px;
+
+                order: 3;
+            }
+
+            &:first-child { order: 2; }
+
+            &:last-child {
+                order: 1;
+                margin-top: 92px;
+            }
+        }
     }
 }

@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1200px) {
+
+    // nav-bar section:
+
+    .main-menu__link {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    // section news:
+
+    .news-item {
+        padding-right: 55px;
+        padding-left: 55px;
+        padding-bottom: 60px;
+
+        &:nth-child(odd) { padding-right: 55px; }
+
+        &:nth-child(even) { padding-left: 55px; }
+    }
+}

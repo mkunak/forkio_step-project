@@ -3,39 +3,11 @@
     // section prices:
 
     .prices {
-        background: url("../img/prices/prices-background.png") no-repeat center/cover;
-        background-color: #4b3b4e;
-
-        &__items {
-            margin-top: 44px;
-            margin-bottom: 93px;
-
-            &--flex {
-                max-height: 1227px;
-
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap-reverse;
-                align-content: space-evenly;
-            }
-        }
-
         &__item {
-            margin: 0;
-            align-self: center;
+            width: 257px;
 
             &--xl {
-                order: 3;
-                margin-top: 42px;
-            }
-
-            &:first-child {
-                order: 2;
-            }
-
-            &:last-child {
-                order: 1;
-                margin-top: 92px;
+                width: 290px;
             }
         }
     }

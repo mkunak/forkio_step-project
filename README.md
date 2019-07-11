@@ -1,4 +1,4 @@
-# forkio_step-project
+﻿# forkio_step-project
 
 Создать файл README.MD в корне проекта. Указать в 
 файле коротко информацию о проекте:
