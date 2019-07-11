@@ -4,13 +4,13 @@
     background-color: #27262a;
     padding-top: 30px;
     padding-bottom: 30px;
-}
 
-.nav-bar .container {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 16px;
-    padding-right: 16px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 .logo {
@@ -39,6 +39,7 @@
     top: 104px;
     right: -300px;
     z-index: 1;
+    display: none;
     width: 290px;
     background-color: #333;
 
@@ -77,6 +78,7 @@
     }
 
     &--animated {
+        display: block;
         right: 15px;
         animation-name: slideLeft;
         animation-duration: 1.5s;
@@ -101,10 +103,7 @@
 }
 
 @keyframes slideLeft {
-    0% {
-        right: -300px;
-    }
-    100% {
-        right: 15px;
-    }
+    0% { right: -300px; }
+
+    100% { right: 15px; }
 }
