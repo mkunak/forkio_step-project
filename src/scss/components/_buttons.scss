@@ -22,6 +22,10 @@
         padding: 15px 30px;
     }
 
+    &--transitioned {
+        @include transitioned;
+    }
+
     &__description {
         font-size: 14px;
         color: $description--color;

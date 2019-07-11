@@ -2,11 +2,9 @@
     background: url("../img/header/header-bg.png") no-repeat center/cover;
     font-family: Montserrat, Arial, sans-serif;
     position: relative;
-    padding-top: 43px;
-    height: 614px;
 
     &--flex {
-        margin: 0 auto;
+        margin: 43px 30px 393px;
 
         display: flex;
         flex-direction: column;
@@ -17,7 +15,6 @@
         font-family: Lato, Arial, sans-serif;
         font-size: 18px;
         color: $bg-font-border--color;
-        width: 100%;
         text-align: center;
         text-transform: capitalize;
         line-height: 1.9;
@@ -29,7 +26,6 @@
         font-size: 14px;
         text-transform: uppercase;
         color: $description--color;
-        width: 100%;
         text-align: center;
     }
 }

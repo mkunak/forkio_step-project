@@ -8,13 +8,15 @@
         font-family: Lato, Arial, sans-serif;
         font-size: 14px;
         line-height: 1.42;
-        width: 100%;
-        margin: 23px auto 34px;
+        margin: 23px auto 14px;
+    }
+
+    &__item {
+        margin-top: 20px;
     }
 
     &__items {
-        width: 260px;
-        height: 70px;
+        max-width: 340px;
         margin: 0 auto;
         text-align: center;
 

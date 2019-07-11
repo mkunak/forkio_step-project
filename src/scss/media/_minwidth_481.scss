@@ -1,7 +1,6 @@
-@import "../variables";
-
 @media only screen and (min-width: 481px) {
-    /*** Nav-bar **/
+
+    // nav-bar section:
 
     .nav-bar {
         padding-top: 22px;
@@ -54,62 +53,19 @@
             padding-right: 24px;
             padding-left: 24px;
 
-            &--active::before { display: none; }
-        }
-    }
-
-    .menu-burger { display: none; }
-
-    .btn--buy-size { float: right; }
-
-    /*** End nav-bar ***/
-
-    /*** News section ***/
-
-    .section-heading--news-size {
-        font-size: 42px;
-        padding-bottom: 90px;
-    }
-
-    .news {
-        padding-top: 79px;
-        padding-bottom: 80px;
-        background-position: 50% 35%;
-
-        &__content {
-            display: flex;
-            flex-wrap: wrap;
-            padding-right: 5px;
-            padding-left: 5px;
-        }
-
-        &-item {
-            width: 50%;
-            box-sizing: border-box;
-
-            &:nth-child(4) { padding-top: 35px; }
-
-            &:nth-child(odd) { padding-right: 45px; }
-
-            &:nth-child(even) { padding-left: 45px; }
-        }
-
-        &__footer {
-            padding-top: 60px;
-
-            &-text {
-                display: block;
-                color: #A291A5;
-                font-size: 14px;
-                line-height: 19px;
-                font-family: Lato, sans-serif;
-                font-weight: 400;
-                padding-bottom: 15px;
+            &--active::before {
+                display: none;
             }
         }
     }
 
-    /*** End news ***/
+    .menu-burger {
+        display: none;
+    }
+
+    .btn--buy-size {
+        float: right;
+    }
 
     // header section:
 
@@ -118,8 +74,10 @@
     }
 
     .header {
-        padding-top: 50px;
-        height: 682px;
+
+        &--flex {
+            margin: 50px 30px 395px;
+        }
 
         &__slogan {
             font-size: 24px;
@@ -158,11 +116,11 @@
         &__description {
             font-size: 21px;
             line-height: 1.5;
-            margin: 38px auto 36px;
+            margin: 38px auto 16px;
         }
 
         &__items {
-            width: 400px;
+            max-width: 400px;
             height: auto;
         }
     }
@@ -192,16 +150,23 @@
             display: flex;
         }
 
-        &__icon--flex {
-            min-width: 25%;
+        &__icon {
 
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
+            &--ml-15 {
+                margin-left: 15px;
+            }
+
+            &--flex {
+                min-width: 25%;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
         }
 
         &__heading {
-            margin: 0 0 20px;
+            margin-top: 0;
         }
 
         &__description {
@@ -214,10 +179,122 @@
         }
     }
 
+    // news section:
+
+    .section-heading--news-size {
+        font-size: 42px;
+        padding-bottom: 90px;
+    }
+
+    .news {
+        background-image: url("../img/news/news-bg-768.jpeg");
+        padding-top: 79px;
+        padding-bottom: 80px;
+        background-position: 50% 35%;
+
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            box-sizing: border-box;
+
+            &__img {
+                padding-bottom: 0;
+
+                &-wrapper {
+                    display: flex;
+                    align-items: center;
+                    height: 64px;
+                    padding-bottom: 50px;
+                }
+            }
+
+            &:nth-child(odd) {
+                padding-right: 10px;
+            }
+
+            &:nth-child(even) {
+                padding-left: 10px;
+            }
+        }
+
+        &__footer {
+            padding-right: 30px;
+            padding-left: 30px;
+
+            &-text {
+                display: block;
+                color: #A291A5;
+                font-size: 14px;
+                line-height: 19px;
+                font-family: Lato, sans-serif;
+                font-weight: 400;
+                padding-bottom: 15px;
+            }
+        }
+
+        &__divider {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
     // prices section:
 
     .section-heading--prices-size {
         font-size: 42px;
-        width: 100%;
+    }
+
+    .prices {
+        background: url("../img/prices/prices-background.png") no-repeat center/cover;
+        background-color: #4b3b4e;
+
+        &__items {
+            margin-top: 44px;
+            margin-bottom: 93px;
+
+            &--flex {
+                max-height: 1227px;
+
+                flex-wrap: wrap-reverse;
+                flex-direction: column;
+                align-content: space-evenly;
+            }
+        }
+
+        &__item {
+            margin: 0;
+
+            &--xl {
+                margin-top: 42px;
+
+                order: 3;
+            }
+
+            &:first-child {
+                order: 2;
+            }
+
+            &:last-child {
+                order: 1;
+                margin-top: 92px;
+            }
+        }
+
+        &__separator {
+            margin: 36px 75px 30px;
+
+            &--xl {
+                margin: 50px 85px 40px;
+            }
+        }
     }
 }
