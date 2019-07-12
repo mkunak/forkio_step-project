@@ -7,10 +7,8 @@
     }
 
     .header {
-
-        &--flex {
-            margin: 60px 30px 433px;
-        }
+        padding-top: 60px;
+        padding-bottom: 433px;
 
         &__slogan {
             font-size: 30px;
@@ -60,9 +58,11 @@
 
     .advantages {
         padding-top: 84px;
-        padding-bottom: 33px;
+        position: relative;
+        overflow: hidden;
 
         &__items {
+            padding-bottom: 50px;
             margin-top: 20px;
             text-align: left;
             float: left;
@@ -82,8 +82,17 @@
             margin-bottom: 37px;
         }
 
+        & .container {
+            overflow: hidden;
+        }
+
         &__img {
-            margin-right: -50%;
+            float: right;
+            margin-right: -30%;
+
+            position: absolute;
+            left: 50%;
+            top: 200px;
         }
     }
 
@@ -113,7 +122,9 @@
         align-items: center;
         margin-left: auto;
 
-        &__item { padding-top: 0; }
+        &__item {
+            padding-top: 0;
+        }
 
         &__link {
             padding-right: 10px;
@@ -138,9 +149,13 @@
             padding-left: 20px;
             padding-bottom: 60px;
 
-            &:nth-child(odd) { padding-right: 20px; }
+            &:nth-child(odd) {
+                padding-right: 20px;
+            }
 
-            &:nth-child(even) { padding-left: 20px; }
+            &:nth-child(even) {
+                padding-left: 20px;
+            }
 
             &__img {
                 padding-bottom: 0;
@@ -153,7 +168,9 @@
                 }
             }
 
-            &__text { padding-bottom: 0; }
+            &__text {
+                padding-bottom: 0;
+            }
         }
 
         &__footer-text {
@@ -189,9 +206,13 @@
             padding-left: 20px;
             padding-bottom: 60px;
 
-            &:nth-child(odd) { padding-right: 20px; }
+            &:nth-child(odd) {
+                padding-right: 20px;
+            }
 
-            &:nth-child(even) { padding-left: 20px; }
+            &:nth-child(even) {
+                padding-left: 20px;
+            }
 
             &__img {
                 padding-bottom: 0;
@@ -204,7 +225,9 @@
                 }
             }
 
-            &__text { padding-bottom: 0; }
+            &__text {
+                padding-bottom: 0;
+            }
         }
 
         &__footer-text {
@@ -232,17 +255,21 @@
     .prices {
 
         &__items {
-            margin-top: 44px;
-            margin-bottom: 93px;
+            max-width: 1114px;
+            margin-left: auto;
+            margin-right: auto;
 
             &--flex {
                 flex-direction: row;
                 flex-wrap: nowrap;
-                justify-content: space-around;
+                justify-content: center;
             }
         }
 
         &__item {
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            width: 100%;
 
             &--xl {
                 margin-top: 0;
@@ -258,6 +285,14 @@
                 margin-top: 0;
 
                 order: 0;
+            }
+        }
+
+        &__separator {
+            margin: 36px auto 30px;
+
+            &--xl {
+                margin: 50px 100px 40px;
             }
         }
     }
