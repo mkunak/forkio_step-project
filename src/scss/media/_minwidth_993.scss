@@ -292,8 +292,12 @@
             margin: 36px auto 30px;
 
             &--xl {
-                margin: 50px 100px 40px;
+                margin: 50px 118px 40px;
             }
+        }
+
+        &__features-wrap {
+            min-width: 215px;
         }
     }
 }
