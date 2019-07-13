@@ -59,7 +59,6 @@
     .advantages {
         padding-top: 84px;
         position: relative;
-        overflow: hidden;
 
         &__items {
             padding-bottom: 50px;
@@ -80,10 +79,6 @@
 
         &__description {
             margin-bottom: 37px;
-        }
-
-        & .container {
-            overflow: hidden;
         }
 
         &__img {
@@ -294,10 +289,6 @@
             &--xl {
                 margin: 50px 118px 40px;
             }
-        }
-
-        &__features-wrap {
-            min-width: 215px;
         }
     }
 }
