@@ -1,16 +1,19 @@
-// document.addEventListener("DOMContentLoaded", function () {
-    let burgerBtn = document.getElementById("burger-button");
-    let mainMenu = document.getElementById("main-menu");
+const burgerBtn = document.getElementById("burger-button");
+const mainMenu = document.getElementById("main-menu");
 
-    mainMenu.classList.remove('main-menu--animated');
+mainMenu.classList.remove('main-menu--animated');
 
-    burgerBtn.addEventListener("click", function () {
-        mainMenu.classList.toggle("main-menu--animated");
+burgerBtn.addEventListener("click", function () {
+    toggleMainMenu();
+});
 
-        // if (mainMenu.classList.contains("main-menu--animated")) {
-        //     document.body.addEventListener(`mouseup`, function () {
-        //         mainMenu.classList.remove('main-menu--animated');
-        //     });
-        // }
-    });
-// });
+document.body.addEventListener('click', function (e) {
+   const mainMenuActive = mainMenu.classList.contains('main-menu--animated');
+   if (!mainMenu.contains(e.target) && !burgerBtn.contains(e.target) && mainMenuActive) {
+       toggleMainMenu();
+   }
+});
+
+function toggleMainMenu() {
+    mainMenu.classList.toggle("main-menu--animated");
+}
